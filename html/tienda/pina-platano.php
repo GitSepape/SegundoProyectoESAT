@@ -10,13 +10,13 @@
 </head>
 <body>
 <?php
-    include('../../../php/header.php');
+    include('../../php/header.php');
 ?>
 <?php
-    include('../../../php/tienda/productos/productos.php');
+    include('../../php/tienda/productos/productos.php');
 ?>
 <?php
-    include('../../../php/footer.php');
+    include('../../php/footer.php');
 ?>
 
 
