@@ -4,9 +4,398 @@
 /*------------------------------------*\
     $SITE
 \*------------------------------------*/
+body, html {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*------------------------------------*\
     $UTILITIES &&& VARIABLES
 \*------------------------------------*/
+.fredoka {
+  font-family: Fredoka, sans-serif;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/*------------------------------------*\
+    $BUCLE COLORS
+\*------------------------------------*/
+.color-yellow {
+  color: #fde912;
+}
+
+.bg-color-yellow {
+  background-color: #fde912;
+  border-radius: 1rem;
+}
+
+.color-purple {
+  color: #a9519a;
+}
+
+.bg-color-purple {
+  background-color: #a9519a;
+  border-radius: 1rem;
+}
+
+.color-brown {
+  color: #7e4f25;
+}
+
+.bg-color-brown {
+  background-color: #7e4f25;
+  border-radius: 1rem;
+}
+
+.color-black {
+  color: black;
+}
+
+.bg-color-black {
+  background-color: black;
+  border-radius: 1rem;
+}
+
+.color-orange {
+  color: #f08400;
+}
+
+.bg-color-orange {
+  background-color: #f08400;
+  border-radius: 1rem;
+}
+
+.color-dark-green {
+  color: #47ae49;
+}
+
+.bg-color-dark-green {
+  background-color: #47ae49;
+  border-radius: 1rem;
+}
+
+.color-light-green {
+  color: #67b22e;
+}
+
+.bg-color-light-green {
+  background-color: #67b22e;
+  border-radius: 1rem;
+}
+
+/*------------------------------------*\
+    $BUCLE FONT_SIZE
+\*------------------------------------*/
+.font_size--12 {
+  font-size: 12px;
+}
+
+.font_size--18 {
+  font-size: 18px;
+}
+
+.font_size--24 {
+  font-size: 24px;
+}
+
+.font_size--30 {
+  font-size: 30px;
+}
+
+.font_size--36 {
+  font-size: 36px;
+}
+
+.font_size--42 {
+  font-size: 42px;
+}
+
+.font_size--48 {
+  font-size: 48px;
+}
+
+.font_size--54 {
+  font-size: 54px;
+}
+
+.font_size--60 {
+  font-size: 60px;
+}
+
+/*------------------------------------*\
+    $BUCLE FONT_WEIGHT
+\*------------------------------------*/
+.font_weight--100 {
+  font-weight: 100;
+}
+
+.font_weight--200 {
+  font-weight: 200;
+}
+
+.font_weight--300 {
+  font-weight: 300;
+}
+
+.font_weight--400 {
+  font-weight: 400;
+}
+
+.font_weight--500 {
+  font-weight: 500;
+}
+
+.font_weight--600 {
+  font-weight: 600;
+}
+
+.font_weight--700 {
+  font-weight: 700;
+}
+
+.font_weight--800 {
+  font-weight: 800;
+}
+
+.font_weight--900 {
+  font-weight: 900;
+}
+
+/*------------------------------------*\
+    $BUCLE PADDING-SPACE
+\*------------------------------------*/
+.padding_space--5 {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.padding_space--10 {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.padding_space--15 {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.padding_space--20 {
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+/*------------------------------------*\
+    $BUCLE GRID_CELL
+\*------------------------------------*/
+.grid_cell--5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(5% - 16px);
+          flex: 0 0 calc(5% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(10% - 16px);
+          flex: 0 0 calc(10% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--15 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(15% - 16px);
+          flex: 0 0 calc(15% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--20 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(20% - 16px);
+          flex: 0 0 calc(20% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--25 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(25% - 16px);
+          flex: 0 0 calc(25% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(30% - 16px);
+          flex: 0 0 calc(30% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--35 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(35% - 16px);
+          flex: 0 0 calc(35% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--40 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(40% - 16px);
+          flex: 0 0 calc(40% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--45 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(45% - 16px);
+          flex: 0 0 calc(45% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--50 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 16px);
+          flex: 0 0 calc(50% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--55 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(55% - 16px);
+          flex: 0 0 calc(55% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--60 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(60% - 16px);
+          flex: 0 0 calc(60% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--65 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(65% - 16px);
+          flex: 0 0 calc(65% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--70 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(70% - 16px);
+          flex: 0 0 calc(70% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--75 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(75% - 16px);
+          flex: 0 0 calc(75% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--80 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(80% - 16px);
+          flex: 0 0 calc(80% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--85 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(85% - 16px);
+          flex: 0 0 calc(85% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--90 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(90% - 16px);
+          flex: 0 0 calc(90% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--95 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(95% - 16px);
+          flex: 0 0 calc(95% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--100 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 16px);
+          flex: 0 0 calc(100% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--33 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(33% - 16px);
+          flex: 0 0 calc(33% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--66 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(66% - 16px);
+          flex: 0 0 calc(66% - 16px);
+  margin: 0 0px;
+}
+
+/*------------------------------------*\
+    $BUCLE MARGIN
+\*------------------------------------*/
+.margin_space--5 {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.margin_space--10 {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.margin_space--15 {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.margin_space--20 {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+/*------------------------------------*\
+    $MEDIA QUERY BODY
+\*------------------------------------*/
+@media all and (min-width: 700px) {
+  body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 2%;
+    height: 100%;
+  }
+
+  html {
+    height: 100%;
+  }
+}
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/

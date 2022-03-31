@@ -9,6 +9,6 @@
                 <img class="logotipo-principal" src="/images/Logotipo-principal.svg" alt="logotipo ESAT jobs">
             </a>
         </div>
-        <h2 class="mobile-subtitle">Impulsa tu carrera trabajando en una empresa líder</h2>
+        <h2 class="mobile-subtitle fredoka">Impulsa tu carrera trabajando en una empresa líder</h2>
     </section>
 </header>
