@@ -2,33 +2,30 @@
 
 // 1EC1C1 8CBDBF 7293A0 4D6272
 
-$blue-raf-dark:     #1EC1C1;
-$blue-raf-standard: #DDE4E9;
-$grey:              #333333;
-$black:             #000000;
-$grey-hover:        #4D6272;
+$yellow:            hsl(55,98%,53%);
+$purple:            hsl(310,35%,49%);
+$brown:             hsl(28,55%,32%);
+$black:             hsl(0,0%,0%);
+$orange:            hsl(33,100%,47%);
+$dark-green:        hsl(121,42%,48%);
+$light-green:       hsl(94,59%,44%);
 
 //-----> $TYPOGRAPHY // $FONTS
 
-$cormorant: Cormorant Garamond, serif;
-$lato:      Lato, serif;
+$fredoka: Fredoka, sans-serif;
 $font-size: 12;
 $font-weight: 100;
 $padding-space: 5;
 $margin-space: 5;
 
-.cormorant {
-    font-family: $cormorant;
-}
-
-.lato {
-    font-family: $lato;
+.fredoka {
+    font-family: $fredoka;
 }
 
 .center-text {
     text-align: center;
 }
- 
+
 //-----> $SPACE
 
 $unit: 6px;
@@ -45,10 +42,13 @@ $grid_cell: 5;
 \*------------------------------------*/
 
 $brand-colors: (
-'blue-raf-dark':    $blue-raf-dark,
-'blue-raf':         $blue-raf-standard,
-'grey':             $grey,
-'black':            $black
+'yellow':           $yellow,
+'purple':           $purple,
+'brown':            $brown,
+'black':            $black,
+'orange':           $orange,
+'dark-green':       $dark-green,
+'light-green':      $light-green
 );
 
 @each $color-name, $value in $brand-colors {
@@ -65,7 +65,7 @@ $brand-colors: (
     $BUCLE FONT_SIZE
 \*------------------------------------*/
 
-@while $font-size <= 36 {
+@while $font-size <= 60 {
     .font_size--#{$font-size} {
         font-size: ($font-size * 1px);
     }
@@ -84,7 +84,7 @@ $brand-colors: (
 
     $font-weight: $font-weight + 100;
 }
- 
+
 /*------------------------------------*\
     $BUCLE PADDING-SPACE
 \*------------------------------------*/
@@ -109,6 +109,16 @@ $brand-colors: (
         margin: 0 0px;
     }
     $grid_cell: $grid_cell + 5;
+}
+
+.grid_cell--33 {
+    flex: 0 0 calc(33% - 16px);
+    margin: 0 0px;
+}
+
+.grid_cell--66 {
+    flex: 0 0 calc(66% - 16px);
+    margin: 0 0px;
 }
 
 /*------------------------------------*\

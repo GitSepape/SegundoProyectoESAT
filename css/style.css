@@ -24,12 +24,8 @@ body, html {
 /*------------------------------------*\
     $UTILITIES &&& VARIABLES
 \*------------------------------------*/
-.cormorant {
-  font-family: Cormorant Garamond, serif;
-}
-
-.lato {
-  font-family: Lato, serif;
+.fredoka {
+  font-family: Fredoka, sans-serif;
 }
 
 .center-text {
@@ -39,39 +35,66 @@ body, html {
 /*------------------------------------*\
     $BUCLE COLORS
 \*------------------------------------*/
-.color-blue-raf-dark {
-  color: #1EC1C1;
+.color-yellow {
+  color: #fde912;
 }
 
-.bg-color-blue-raf-dark {
-  background-color: #1EC1C1;
+.bg-color-yellow {
+  background-color: #fde912;
   border-radius: 1rem;
 }
 
-.color-blue-raf {
-  color: #DDE4E9;
+.color-purple {
+  color: #a9519a;
 }
 
-.bg-color-blue-raf {
-  background-color: #DDE4E9;
+.bg-color-purple {
+  background-color: #a9519a;
   border-radius: 1rem;
 }
 
-.color-grey {
-  color: #333333;
+.color-brown {
+  color: #7e4f25;
 }
 
-.bg-color-grey {
-  background-color: #333333;
+.bg-color-brown {
+  background-color: #7e4f25;
   border-radius: 1rem;
 }
 
 .color-black {
-  color: #000000;
+  color: black;
 }
 
 .bg-color-black {
-  background-color: #000000;
+  background-color: black;
+  border-radius: 1rem;
+}
+
+.color-orange {
+  color: #f08400;
+}
+
+.bg-color-orange {
+  background-color: #f08400;
+  border-radius: 1rem;
+}
+
+.color-dark-green {
+  color: #47ae49;
+}
+
+.bg-color-dark-green {
+  background-color: #47ae49;
+  border-radius: 1rem;
+}
+
+.color-light-green {
+  color: #67b22e;
+}
+
+.bg-color-light-green {
+  background-color: #67b22e;
   border-radius: 1rem;
 }
 
@@ -96,6 +119,22 @@ body, html {
 
 .font_size--36 {
   font-size: 36px;
+}
+
+.font_size--42 {
+  font-size: 42px;
+}
+
+.font_size--48 {
+  font-size: 48px;
+}
+
+.font_size--54 {
+  font-size: 54px;
+}
+
+.font_size--60 {
+  font-size: 60px;
 }
 
 /*------------------------------------*\
@@ -300,6 +339,20 @@ body, html {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(100% - 16px);
           flex: 0 0 calc(100% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--33 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(33% - 16px);
+          flex: 0 0 calc(33% - 16px);
+  margin: 0 0px;
+}
+
+.grid_cell--66 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(66% - 16px);
+          flex: 0 0 calc(66% - 16px);
   margin: 0 0px;
 }
 
