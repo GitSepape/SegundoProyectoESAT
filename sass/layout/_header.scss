@@ -1,0 +1,26 @@
+header {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.article-topbar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
+
+.topbar-contenido {
+    text-align: center;
+}

@@ -2,26 +2,6 @@
     $SASS STYLES
 \*------------------------------------*/
 /*------------------------------------*\
-    $SITE
-\*------------------------------------*/
-body, html {
-  width: 100%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/*------------------------------------*\
     $UTILITIES &&& VARIABLES
 \*------------------------------------*/
 .fredoka {
@@ -41,7 +21,6 @@ body, html {
 
 .bg-color-yellow {
   background-color: #fde912;
-  border-radius: 1rem;
 }
 
 .color-purple {
@@ -50,7 +29,6 @@ body, html {
 
 .bg-color-purple {
   background-color: #a9519a;
-  border-radius: 1rem;
 }
 
 .color-brown {
@@ -59,7 +37,6 @@ body, html {
 
 .bg-color-brown {
   background-color: #7e4f25;
-  border-radius: 1rem;
 }
 
 .color-black {
@@ -68,7 +45,6 @@ body, html {
 
 .bg-color-black {
   background-color: black;
-  border-radius: 1rem;
 }
 
 .color-orange {
@@ -77,7 +53,6 @@ body, html {
 
 .bg-color-orange {
   background-color: #f08400;
-  border-radius: 1rem;
 }
 
 .color-dark-green {
@@ -86,7 +61,6 @@ body, html {
 
 .bg-color-dark-green {
   background-color: #47ae49;
-  border-radius: 1rem;
 }
 
 .color-light-green {
@@ -95,7 +69,6 @@ body, html {
 
 .bg-color-light-green {
   background-color: #67b22e;
-  border-radius: 1rem;
 }
 
 /*------------------------------------*\
@@ -384,11 +357,6 @@ body, html {
 \*------------------------------------*/
 @media all and (min-width: 700px) {
   body {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 2%;
     height: 100%;
   }
 
@@ -397,8 +365,67 @@ body, html {
   }
 }
 /*------------------------------------*\
+    $SITE
+\*------------------------------------*/
+body, html {
+  width: 100%;
+  margin: auto;
+  font-family: Fredoka, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
+header {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.topbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.article-topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 2px;
+}
+
+.topbar-contenido {
+  text-align: center;
+}
