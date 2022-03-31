@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php
-    include('../../php/header.php');
+    include('../../php/header-productos.php');
 ?>
 <?php
     include('../../php/tienda/productos/productos.php');

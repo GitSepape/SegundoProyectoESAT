@@ -3,6 +3,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    position: top;
 }
 
 .topbar {
@@ -16,11 +17,18 @@ header {
     display: flex;
     flex-direction: row;
     align-content: center;
+    align-items: flex-end;
     justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 2px;
 }
 
 .topbar-contenido {
     text-align: center;
+}
+
+@media all and (max-width: 800px) {
+    .topbar-off {
+        display: none;
+    }
 }

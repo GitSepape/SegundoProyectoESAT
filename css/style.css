@@ -394,6 +394,7 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: top;
 }
 
 .topbar {
@@ -419,13 +420,22 @@ header {
           flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 2px;
 }
 
 .topbar-contenido {
   text-align: center;
+}
+
+@media all and (max-width: 800px) {
+  .topbar-off {
+    display: none;
+  }
 }
