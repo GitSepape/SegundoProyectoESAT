@@ -27,11 +27,79 @@ header {
     text-align: center;
 }
 
+.topbar-on {
+    display: none;
+}
+
+.hamburguer-bt {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    width: 60px;
+    transition: all .2s ease-out;
+    padding-right: 5%;
+}
+
+.hamburguer-bt .hamburguer-bt__stripe {
+    width: 24px;
+    height: 4px;
+    background: $black;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__top {
+    transform: rotate(45deg) translate(0px, 11px);
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__middle {
+    opacity: 0;
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__bottom {
+    transform: rotate(-45deg) translate(0px, -11px);
+}
+
+.menu{
+    padding: $space 0;
+    padding-right: 12px;
+    margin: 0;
+    text-align: left;
+    z-index: 0;
+    width: auto;
+    background-color: $orange;
+    position: absolute;
+    right: 0px;
+    &__li{
+        margin-bottom: $space;
+    }
+    &__link{
+        color: $black;
+        text-decoration: none;
+        margin-bottom: 20px;
+        &:hover{
+            text-decoration: underline $black;
+        }
+    }
+}
+.off{
+    display: none;
+}
+
 @media all and (max-width: 800px) {
+    header {
+        justify-content: space-between;
+    }
     .topbar-off {
         display: none;
     }
     .topbar {
         justify-content: flex-start;
+        width: auto;
+    }
+    .topbar-on {
+        display: block;
     }
 }

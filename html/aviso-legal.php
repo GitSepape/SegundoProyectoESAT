@@ -23,7 +23,8 @@
 ?>
 
 
-
+<script src="../src/index.js"></script>
+<script src="../src/desplegable.js"></script>
 
 </body>
 </html>
