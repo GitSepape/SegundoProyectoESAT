@@ -42,7 +42,7 @@
     </button>
 </header>
 <nav class="menu off">
-    <ul>
+    <ul class="menu__ul">
         <li class="menu__li"><a href="./index.php" class="menu__link">INICIO</a></li>
         <li class="menu__li"><a href="./tienda.php" class="menu__link">TIENDA</a></li>
         <li class="menu__li"><a href="./aviso-legal.php" class="menu__link">CONTACTO</a></li>
