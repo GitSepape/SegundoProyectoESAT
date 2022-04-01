@@ -31,4 +31,7 @@ header {
     .topbar-off {
         display: none;
     }
+    .topbar {
+        justify-content: flex-start;
+    }
 }
