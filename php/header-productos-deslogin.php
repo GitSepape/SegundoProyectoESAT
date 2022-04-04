@@ -27,7 +27,7 @@
         </article>
         <article class="grid_cell--40 article-topbar topbar-off">
             <div class="topbar-contenido grid_cell--33">
-            <a class="iniciar--sesion" href="../perfil.php">CUENTA</a>
+            <a class="iniciar--sesion activado" id="activado" href="../inicio-sesion.php">CUENTA</a>
             </div>
             <div class="topbar-contenido grid_cell--33">
                 <a href="../realizar-pedido.php">PEDIDOS</a>

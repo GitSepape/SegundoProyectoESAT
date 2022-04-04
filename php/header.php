@@ -7,7 +7,7 @@
             <div class="topbar-contenido grid_cell--33">
                 <a href="./tienda.php">TIENDA</a>
             </div>
-            <div class="topbar-contenido grid_cell--33">
+            <div class="topbar-contenido grid_cell--33 desactivado">
                 <a href="./aviso-legal.php">CONTACTO</a>
             </div>
         </article>
@@ -27,12 +27,12 @@
         </article>
         <article class="grid_cell--40 article-topbar topbar-off">
             <div class="topbar-contenido grid_cell--33">
-                <a href="./inicio-sesion.php">MI CUENTA</a>
+                <a class="iniciar--sesion" href="./perfil.php">CUENTA</a>
             </div>
             <div class="topbar-contenido grid_cell--33">
                 <a href="./realizar-pedido.php">PEDIDOS</a>
             </div>
-            <div class="topbar-contenido grid_cell--33">CARRITO</div>
+            <div class="topbar-contenido grid_cell--33 desactivado">CARRITO</div>
         </article>
     </section>
     <button class="hamburguer-bt topbar-on">
@@ -45,7 +45,7 @@
     <ul class="menu__ul">
         <li class="menu__li"><a href="./index.php" class="menu__link">INICIO</a></li>
         <li class="menu__li"><a href="./tienda.php" class="menu__link">TIENDA</a></li>
-        <li class="menu__li"><a href="./aviso-legal.php" class="menu__link">CONTACTO</a></li>
+        <li class="menu__li"><a href="./aviso-legal.php" class="menu__link desactivado">CONTACTO</a></li>
         <li class="menu__li"><a href="./perfil.php" class="menu__link">CUENTA</a></li>
         <li class="menu__li"><a href="./realizar-pedido.php" class="menu__link">PEDIDOS</a></li>
     </ul>

@@ -13,7 +13,7 @@
     include('../../php/header-productos.php');
 ?>
 <?php
-    include('../../php/tienda/productos/productos.php');
+    include('../../php/tienda/productos/pina-kiwi.php');
 ?>
 <?php
     include('../../php/footer-productos.php');

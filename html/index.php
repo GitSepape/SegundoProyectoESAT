@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php
-    include('../php/header.php');
+    include('../php/header-deslogin.php');
 ?>
 <?php
     include('../php/inicio/home.php');

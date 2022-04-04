@@ -384,6 +384,7 @@ a {
   color: black;
   text-decoration: none;
   font-size: 1.6vw;
+  font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -777,6 +778,7 @@ header {
 .productos__descripcion {
   font-size: 1.6vw;
   text-align: center;
+  font-weight: 500;
 }
 .productos :last-child {
   padding-bottom: 12px;
@@ -964,6 +966,63 @@ header {
   color: white;
   font-size: 1.8vw;
 }
+.perfil__boton--cerrar {
+  background-color: transparent;
+  color: #f08400;
+}
+
+.desactivado {
+  display: none;
+}
+
+.boton__compra {
+  width: 25vw;
+  height: 4.2vw;
+  background-color: #f08400;
+  text-align: center;
+  border-radius: 16px;
+  border-color: transparent;
+  color: white;
+  font-size: 1.8vw;
+}
+
+.producto {
+  padding: 24px 12px;
+}
+.producto__comprar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 10%;
+}
+.producto__comprar--imagen {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0px;
+          flex: 0 0 0;
+}
+.producto__texto {
+  font-size: 2.4vw;
+  margin-bottom: 12px;
+}
+.producto__texto--nombre {
+  font-size: 3vw;
+}
+
+.imagen__fruta {
+  width: 38vw;
+  height: 38vw;
+}
 
 @media all and (max-width: 700px) {
   .tienda__titulo {
@@ -1046,5 +1105,38 @@ header {
 
   .politicas {
     font-size: 4.8vw;
+  }
+
+  .producto__comprar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+    padding: 0px 5%;
+  }
+  .producto__comprar--texto {
+    text-align: center;
+  }
+  .producto__texto {
+    font-size: 4.2vw;
+  }
+  .producto__texto--nombre {
+    font-size: 5.4vw;
+    margin-top: 12px;
+  }
+
+  .imagen__fruta {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .boton__compra {
+    width: 50vw;
+    height: 9vw;
+    font-size: 4.2vw;
   }
 }
