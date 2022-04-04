@@ -67,7 +67,7 @@ $brand-colors: (
 
 @while $font-size <= 60 {
     .font_size--#{$font-size} {
-        font-size: ($font-size * 1px);
+        font-size: ($font-size * 1vw);
     }
 
     $font-size: $font-size + 6;

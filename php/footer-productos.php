@@ -4,9 +4,9 @@
             <div class="grid_cell--90">
                 <ul class="footer__derechos">
                     <!-- aquí va la lista con todos las politicas -->
-                    <li class="center-text grid_cell--33 footer__lista font_weight--700"><a href="./politica-de-privacidad.php">PRIVACIDAD</a></li>
-                    <li class="center-text grid_cell--33 footer__lista font_weight--700"><a href="./politica-de-devolucion.php">DEVOLUCIÓN</a></li>
-                    <li class="center-text grid_cell--33 footer__lista font_weight--700"><a href="./faq.php">FAQs</a></li>
+                    <li class="center-text grid_cell--33 footer__lista font_weight--700"><a href="../politica-de-privacidad.php">PRIVACIDAD</a></li>
+                    <li class="center-text grid_cell--33 footer__lista font_weight--700"><a href="../politica-de-devolucion.php">DEVOLUCIÓN</a></li>
+                    <li class="center-text grid_cell--33 footer__lista font_weight--700"><a href="../faq.php">FAQs</a></li>
                 </ul>
                 <div>
                     <p class="footer__lista">

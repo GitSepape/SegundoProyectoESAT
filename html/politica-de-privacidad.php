@@ -13,7 +13,8 @@
     include('../php/header.php');
 ?>
 
-<h2>Política de Privacidad</h2>
+<h1 class="color-orange tienda__titulo privacidad">ACERCA<span class="color-light-green"> DE SMOOTH</span></h1>
+<div class="linea-separadora"></div> <!-- linea separadora naranja -->
 
 <?php
     include('../php/politicas/home.php');

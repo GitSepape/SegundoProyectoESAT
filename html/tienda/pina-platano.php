@@ -16,7 +16,7 @@
     include('../../php/tienda/productos/productos.php');
 ?>
 <?php
-    include('../../php/footer.php');
+    include('../../php/footer-productos.php');
 ?>
 
 

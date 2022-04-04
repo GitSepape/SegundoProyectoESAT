@@ -1,4 +1,4 @@
-<header class="bg-color-orange">
+<header>
     <section class="topbar padding_space--5">
         <article class="grid_cell--40 article-topbar topbar-off">
             <div class="topbar-contenido grid_cell--33">
@@ -11,7 +11,7 @@
                 <a href="../aviso-legal.php">CONTACTO</a>
             </div>
         </article>
-        <article class="grid_cell--20 article-topbar bg-color-brown">
+        <article class="grid_cell--20 article-topbar">
             <div class="topbar-contenido grid_cell--100">
                 <a href="../index.php">
                     <svg width="160" height="53" viewBox="0 0 171 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@
         </article>
         <article class="grid_cell--40 article-topbar topbar-off">
             <div class="topbar-contenido grid_cell--33">
-                <a href="../perfil.php">MI CUENTA</a>
+                <a href="../inicio-sesion.php">MI CUENTA</a>
             </div>
             <div class="topbar-contenido grid_cell--33">
                 <a href="../realizar-pedido.php">PEDIDOS</a>
@@ -46,7 +46,7 @@
         <li class="menu__li"><a href="../index.php" class="menu__link">INICIO</a></li>
         <li class="menu__li"><a href="../tienda.php" class="menu__link">TIENDA</a></li>
         <li class="menu__li"><a href="../aviso-legal.php" class="menu__link">CONTACTO</a></li>
-        <li class="menu__li"><a href="../perfil.php" class="menu__link">MI CUENTA</a></li>
+        <li class="menu__li"><a href="../perfil.php" class="menu__link">CUENTA</a></li>
         <li class="menu__li"><a href="../realizar-pedido.php" class="menu__link">PEDIDOS</a></li>
     </ul>
 </nav>

@@ -22,6 +22,7 @@
 
 <script src="../src/index.js"></script>
 <script src="../src/desplegable.js"></script>
+<script src="../src/pass.js"></script>
 
 </body>
 </html>
