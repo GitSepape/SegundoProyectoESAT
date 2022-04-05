@@ -229,7 +229,148 @@
 
 //-----> $PEDIDO
 
+.width-80 {
+    width: 100%;
+}
 
+// .height-30 {
+//     width: 100%;
+// }
+
+.pedido {
+    &__contenido {
+        display: flex;
+        justify-content: center;
+        padding: 0px 5%;
+        padding-top: 48px;
+        padding-left: 10%;
+    }
+    &__productos {
+        &--contenido {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            display: flex;
+        }
+        &--titulo {
+            font-size: 3.0vw;
+        }
+        &--imagen {
+            width: 10vw;
+            height: 10vw;
+        }
+        &--informacion {
+            padding-left: 12px;
+        }
+        &--svg {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row-reverse;
+        }
+        &--borrar {
+            border: none;
+            background-color: transparent;
+        }
+    }
+    &__texto {
+        font-size: 1.2vw;
+        &--titulo {
+            font-size: 1.8vw;
+        }
+        &--cantidad {
+            padding-left: 24px;
+            
+        }
+        &--referencia {
+            padding-left: 24px;
+            
+        }
+        &--precio {
+            padding-left: 24px;
+            text-align: right;
+        }
+    }
+    &__dinero {
+        display: flex;
+        flex-direction: column;
+        &--subtotal {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &--descuento {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &--iva {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &--total {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+}
+
+.dinero {
+    &__texto {
+        font-size: 1.6vw;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        &--subtotal {
+            font-size: 2.0vw;
+            padding-left: 6px;
+            &-precio {
+                padding-right: 12px;
+            }
+        }
+        &--codigo {
+            font-size: 2.0vw;
+            padding-left: 6px;
+            &-descuento {
+                padding-right: 12px;
+            }
+        }
+        &--iva {
+            font-size: 2.0vw;
+            padding-left: 6px;
+            &-precio {
+                padding-right: 12px;
+            }
+        }
+        &--total {
+            font-size: 2.0vw;
+            padding-left: 6px;
+            color: white;
+            &-precio {
+                color: white;
+                padding-right: 12px;
+            }
+        }
+    }
+}
+
+.boton__realizar-pedido {
+    width: 18vw;
+    height: 3.2vw;
+    background-color: $orange;
+    text-align: center;
+    border-radius: 12px;
+    border-color: transparent;
+    color: white;
+    font-size: 1.6vw;
+    margin-left: 9vw;
+}
+
+.boton__borrar {
+    position: absolute;
+    background-color: transparent;
+    // border: transparent;
+    z-index: 2;
+}
 
 //-----> $MEDIAQUERIES
 
@@ -279,6 +420,55 @@
             margin-bottom: 12px;
             padding: 12px 0px;
         }
+    }
+    .pedido {
+        &__contenido {
+            flex-direction: column;
+        }
+        &__productos {
+            &--imagen {
+                width: 25vw;
+                height: 25vw;
+            }
+        }
+        &__texto {
+            font-size: 2.4vw;
+            &--titulo {
+                font-size: 3.0vw;
+            }
+        }
+    }
+    .borrar {
+        display: none;
+    }
+    .dinero {
+        &__texto {
+            font-size: 3.0vw;
+            &--subtotal {
+                font-size: 3.6vw;
+            }
+            &--codigo {
+                font-size: 3.6vw;
+            }
+            &--iva {
+                font-size: 3.6vw;
+            }
+            &--total {
+                font-size: 3.6vw;
+            }
+        }
+    }
+    .boton__realizar-pedido {
+        margin-bottom: 12px;
+        width: 40vw;
+        height: 6vw;
+        background-color: $orange;
+        text-align: center;
+        border-radius: 12px;
+        border-color: transparent;
+        color: white;
+        font-size: 3.6vw;
+        margin-left: 40vw;
     }
 }
 
