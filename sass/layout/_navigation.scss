@@ -182,10 +182,6 @@
     }
 }
 
-.desactivado {
-    display: none;
-}
-
 //-----> $PRODUCTOS
 
 .boton {
@@ -244,6 +240,7 @@
         padding: 0px 5%;
         padding-top: 48px;
         padding-left: 10%;
+        padding-bottom: 12px;
     }
     &__productos {
         &--contenido {
@@ -373,6 +370,10 @@
 }
 
 //-----> $MEDIAQUERIES
+
+.desactivado {
+    display: none;
+}
 
 @media all and (max-width: 700px) {
     .tienda {

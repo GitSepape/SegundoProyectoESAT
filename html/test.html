@@ -66,8 +66,8 @@
             <article class="pedido__contenido">
                 <div class="pedido__productos grid_cell--65">
                     <h3 class="color-orange pedido__productos--titulo grid_cell--20">TU<span class="color-light-green"> COMPRA</span></h3>
-                    <div class="linea-separadora width-80"></div> <!-- linea separadora naranja -->
-                    <div class="grid_cell--100 pedido__productos--contenido">
+                    <div id="1" class="1 linea-separadora width-80"></div> <!-- linea separadora naranja -->
+                    <div id="1" class="1 grid_cell--100 pedido__productos--contenido">
                         <div class="grid_cell--10 borrar"></div>
                         <img class="grid_cell--20 pedido__productos--imagen" src="../images/fresa-platano.jpg" alt="">
                         <ul class="grid_cell--30 pedido__productos--informacion">
@@ -77,16 +77,16 @@
                             <li class="grid_cell--25 pedido__texto pedido__texto--precio">9.99€</li>
                         </ul>
                         <div class="pedido__productos--svg grid_cell--45">
-                            <button class="pedido__productos--borrar" id="borrar">
-                                <input type="button" class="boton__borrar" value="">
+                            <button onclick="myFunction()" class="pedido__productos--borrar">
+                                <input onclick="" type="button" class="boton__borrar" value="" id="borrar">
                                 <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 4H15C15.6 4 16 4.4 16 5V6H3V5C3 4.4 3.5 4 4 4H7C7.2 2.9 8.3 2 9.5 2C10.7 2 11.8 2.9 12 4ZM8 4H11C10.8 3.4 10.1 3 9.5 3C8.9 3 8.2 3.4 8 4ZM4 7H15L14.1 17.1C14.1 17.6 13.6 18 13.1 18H5.9C5.4 18 5 17.6 4.9 17.1L4 7Z" fill="black"/>
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <div class="linea-separadora width-80"></div> <!-- linea separadora naranja -->
-                    <div class="grid_cell--100 pedido__productos--contenido">
+                    <div class="2 linea-separadora width-80"></div> <!-- linea separadora naranja -->
+                    <div class="2 grid_cell--100 pedido__productos--contenido">
                         <div class="grid_cell--10 borrar"></div>
                         <img class="grid_cell--20 pedido__productos--imagen" src="../images/fresa-platano.jpg" alt="">
                         <ul class="grid_cell--30 pedido__productos--informacion">
@@ -96,8 +96,8 @@
                             <li class="grid_cell--25 pedido__texto pedido__texto--precio">9.99€</li>
                         </ul>
                         <div class="pedido__productos--svg grid_cell--45">
-                            <button class="pedido__productos--borrar" id="borrar">
-                                <input type="button" class="boton__borrar" value="">
+                            <button onclick="myFunction()" class="pedido__productos--borrar">
+                                <input onclick="" type="button" class="boton__borrar" value="" id="borrar">
                                 <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 4H15C15.6 4 16 4.4 16 5V6H3V5C3 4.4 3.5 4 4 4H7C7.2 2.9 8.3 2 9.5 2C10.7 2 11.8 2.9 12 4ZM8 4H11C10.8 3.4 10.1 3 9.5 3C8.9 3 8.2 3.4 8 4ZM4 7H15L14.1 17.1C14.1 17.6 13.6 18 13.1 18H5.9C5.4 18 5 17.6 4.9 17.1L4 7Z" fill="black"/>
                                 </svg>
@@ -171,6 +171,7 @@
 <script src="../src/index.js"></script>
 <script src="../src/desplegable.js"></script>
 <script src="../src/pass.js"></script>
+<script src="../src/basura.js"></script>
 
 </body>
 </html>
