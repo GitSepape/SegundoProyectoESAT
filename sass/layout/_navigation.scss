@@ -1,0 +1,533 @@
+//-----> $TIENDA
+
+.tienda {
+    display: flex;
+    width: 100vw;
+    &__titulo {
+        margin: 0;
+        padding: 12px;
+        font-size: 3.6vw;
+    }
+    &__productos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 10% 0px 10%;
+    &__imagen {
+        width: 100%;
+    }
+    &__titulo {
+        margin-top: 18px;
+        text-align: center;
+        font-size: 2.4vw;
+    }
+    &__descripcion {
+        font-size: 1.6vw;
+        text-align: center;
+        font-weight: 500;
+    }
+    :last-child {
+        padding-bottom: 12px;
+    }
+}
+
+//-----> $POLITICAS
+
+.politicas {
+    margin: 0;
+    padding: 12px;
+    padding-right: 20%;
+    font-size: 18px;
+}
+
+.iniciar-sesion {
+    background-color: #b3b3b3;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+//-----> $INICIO SESION
+
+.sesion {
+    width: 300px;
+    background-color: white;
+    margin: auto;
+    padding: 12px;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px 4px grey;
+    &__titulo {
+        font-size: 30px;
+        padding-bottom: 12px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__datos {
+        width: 230px;
+        height: 40px;
+        margin-bottom: 12px;
+        border: 2px $orange solid;
+        border-radius: 12px;
+    }
+    &__boton {
+        width: 150px;
+        height: 30px;
+        background-color: $orange;
+        border-radius: 12px;
+        border-color: transparent;
+        color: white;
+        align-self: center;
+    }
+    &__login {
+        margin-bottom: 6px;
+        margin-top: 6px;
+    }
+}
+
+//-----> $PERFIL
+
+.perfil {
+    padding: 12px 5%;
+    width: 100vw;
+    &__todo {
+        display: flex;
+        flex-direction: column;
+    }
+    &__contenedor {
+        display: flex;
+        width: 100%;
+    }
+    &__primero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 12px;
+        justify-content: space-between;
+        align-items: flex-end;
+        &--texto {
+            text-align: end;
+            &-perfil {
+                font-size: 2.4vw;
+            }
+            &-informacion {
+                font-size: 1.8vw;
+                margin-top: 18px;
+            }
+            &-opciones {
+                font-size: 1.8vw;
+                margin-top: 12px;
+            }
+        }
+    }
+    &__segundo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        &--informacion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &--datos {
+            width: 100%;
+            margin-right: 12px;
+            margin-top: 18px;
+            height: 40px;
+            border-radius: 12px;
+            border: 2px $orange solid;
+        }
+        &--direccion {
+            flex: 0 0 calc(100% - 12px);
+        }
+        &--avatar {
+            display: inline-block;
+            width: 12vw;
+            height: 12vw;
+            background-color: $light-green;
+            border: solid 5px white;
+            border-radius: 50%;
+        }
+        &--botones {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 24px;
+        }
+    }
+    &__boton {
+        width: 20%;
+        height: 4.2vw;
+        background-color: $orange;
+        text-align: center;
+        border-radius: 16px;
+        border-color: transparent;
+        color: white;
+        font-size: 1.8vw; 
+        &--cerrar {
+            background-color: transparent;
+            color: $orange;
+        }
+    }
+}
+
+//-----> $PRODUCTOS
+
+.boton {
+    &__compra {
+        width: 25vw;
+        height: 4.2vw;
+        background-color: $orange;
+        text-align: center;
+        border-radius: 16px;
+        border-color: transparent;
+        color: white;
+        font-size: 1.8vw;
+    }
+}
+
+.producto {
+    padding: 24px 12px;
+    &__comprar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-right: 10%;
+        &--imagen {
+            flex: 0 0 0;
+        }
+    }
+    &__texto {
+        font-size: 2.4vw;
+        margin-bottom: 12px;
+        &--nombre {
+            font-size: 3.0vw;
+        }
+    }
+}
+.imagen__fruta {
+    width: 38vw;
+    height: 38vw;
+}
+
+//-----> $PEDIDO
+
+.width-80 {
+    width: 100%;
+}
+
+// .height-30 {
+//     width: 100%;
+// }
+
+.pedido {
+    &__contenido {
+        display: flex;
+        justify-content: center;
+        padding: 0px 5%;
+        padding-top: 48px;
+        padding-left: 10%;
+        padding-bottom: 12px;
+    }
+    &__productos {
+        &--contenido {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            display: flex;
+        }
+        &--titulo {
+            font-size: 3.0vw;
+        }
+        &--imagen {
+            width: 10vw;
+            height: 10vw;
+        }
+        &--informacion {
+            padding-left: 12px;
+        }
+        &--svg {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row-reverse;
+        }
+        &--borrar {
+            border: none;
+            background-color: transparent;
+        }
+    }
+    &__texto {
+        font-size: 1.2vw;
+        &--titulo {
+            font-size: 1.8vw;
+        }
+        &--cantidad {
+            padding-left: 24px;
+            
+        }
+        &--referencia {
+            padding-left: 24px;
+            
+        }
+        &--precio {
+            padding-left: 24px;
+            text-align: right;
+        }
+    }
+    &__dinero {
+        display: flex;
+        flex-direction: column;
+        &--subtotal {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &--descuento {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &--iva {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        &--total {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+}
+
+.dinero {
+    &__texto {
+        font-size: 1.6vw;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        &--subtotal {
+            font-size: 2.0vw;
+            padding-left: 6px;
+            &-precio {
+                padding-right: 12px;
+            }
+        }
+        &--codigo {
+            font-size: 2.0vw;
+            padding-left: 6px;
+            &-descuento {
+                padding-right: 12px;
+            }
+        }
+        &--iva {
+            font-size: 2.0vw;
+            padding-left: 6px;
+            &-precio {
+                padding-right: 12px;
+            }
+        }
+        &--total {
+            font-size: 2.0vw;
+            padding-left: 6px;
+            color: white;
+            &-precio {
+                color: white;
+                padding-right: 12px;
+            }
+        }
+    }
+}
+
+.boton__realizar-pedido {
+    width: 18vw;
+    height: 3.2vw;
+    background-color: $orange;
+    text-align: center;
+    border-radius: 12px;
+    border-color: transparent;
+    color: white;
+    font-size: 1.6vw;
+    margin-left: 9vw;
+}
+
+.boton__borrar {
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+    z-index: 2;
+}
+
+//-----> $MEDIAQUERIES
+
+.desactivado {
+    display: none;
+}
+
+@media all and (max-width: 700px) {
+    .tienda {
+        &__titulo {
+            font-size: 6vw;
+        }
+    }
+    .perfil {
+        &__contenedor {
+            flex-direction: column;
+
+        }
+        &__primero {
+            align-items: flex-start;
+            &--texto {
+                &-informacion {
+                    display: none;
+                }
+                &-opciones {
+                    display: none;
+                }
+                &-perfil {
+                    font-size: 24px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        &__segundo {
+
+            &--datos {
+                flex: 0 0 calc(100% - 16px);
+            }
+            &--avatar {
+                width: 150px;
+                height: 150px;
+            }
+            &--botones {
+                flex-direction: column;
+            }
+        }
+        &__boton {
+            flex: 0 0 calc(100% - 16px);
+            width: 80%;
+            font-size: 12px;
+            margin-bottom: 12px;
+            padding: 12px 0px;
+        }
+    }
+    .pedido {
+        &__contenido {
+            flex-direction: column;
+        }
+        &__productos {
+            &--imagen {
+                width: 25vw;
+                height: 25vw;
+            }
+        }
+        &__texto {
+            font-size: 2.4vw;
+            &--titulo {
+                font-size: 3.0vw;
+            }
+        }
+    }
+    .borrar {
+        display: none;
+    }
+    .dinero {
+        &__texto {
+            font-size: 3.0vw;
+            &--subtotal {
+                font-size: 3.6vw;
+            }
+            &--codigo {
+                font-size: 3.6vw;
+            }
+            &--iva {
+                font-size: 3.6vw;
+            }
+            &--total {
+                font-size: 3.6vw;
+            }
+        }
+    }
+    .boton__realizar-pedido {
+        margin-bottom: 12px;
+        width: 40vw;
+        height: 6vw;
+        background-color: $orange;
+        text-align: center;
+        border-radius: 12px;
+        border-color: transparent;
+        color: white;
+        font-size: 3.6vw;
+        margin-left: 40vw;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .productos {
+        justify-content: space-around;
+        &__titulo {
+            font-size: 6vw;
+        }
+        &__descripcion {
+            font-size: 4.8vw;
+            padding-bottom: 12px;
+            padding-top: 6px;
+        }
+    }
+    .tienda {
+        &__titulo {
+            font-size: 7.2vw;
+        }
+    }
+    .productos:last-child {
+        padding-top: 0;
+    }
+    .grid_cell--33 {
+        flex: 0 0 calc(100% - 16px);
+    }
+    .politicas {
+        font-size: 4.8vw;
+    }
+    .producto {
+        &__comprar {
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0;
+            padding: 0px 5%;
+            &--texto {
+                text-align: center;
+            }
+        }
+        &__texto {
+            font-size: 4.2vw;
+            &--nombre {
+                font-size: 5.4vw;
+                margin-top: 12px;
+            }
+        }
+    }
+    .imagen {
+        &__fruta {
+            width: 80vw;
+            height: 80vw;
+        }
+    }
+    .boton__compra {
+        width: 50vw;
+        height: 9vw;
+        font-size: 4.2vw;
+    }
+}
+
+

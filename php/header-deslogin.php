@@ -27,12 +27,12 @@
         </article>
         <article class="grid_cell--40 article-topbar topbar-off">
             <div class="topbar-contenido grid_cell--33">
-                <a class="iniciar--sesion" href="./perfil.php">CUENTA</a>
+                <a class="iniciar--sesion activado" id="activado" href="./inicio-sesion.php">CUENTA</a>
             </div>
             <div class="topbar-contenido grid_cell--33">
                 <a href="./realizar-pedido.php">PEDIDOS</a>
             </div>
-            <div class="topbar-contenido grid_cell--33 desactivado">CARRITO</div>
+            <div class="topbar-contenido grid_cell--33  desactivado">CARRITO</div>
         </article>
     </section>
     <button class="hamburguer-bt topbar-on">

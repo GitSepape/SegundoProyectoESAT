@@ -1,0 +1,38 @@
+footer {
+    background-color: $orange;
+    position: absolute;
+    width: 100vw;
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px 0px 24px;
+    &__derechos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__lista {
+        font-size: 1.8vw;
+    }
+}
+
+.svg__bebida {
+    width: 102px;
+}
+
+@media all and (max-width: 700px) {
+    .footer__lista {
+        font-size: 12px;
+    }
+    .svg__bebida {
+        width: 62px;
+    }
+}

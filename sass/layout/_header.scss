@@ -1,0 +1,107 @@
+header {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: top;
+}
+
+.topbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.article-topbar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+.topbar-contenido {
+    text-align: center;
+}
+
+.topbar-on {
+    display: none;
+}
+
+.hamburguer-bt {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    width: 60px;
+    transition: all .2s ease-out;
+    padding-right: 5%;
+}
+
+.hamburguer-bt .hamburguer-bt__stripe {
+    width: 24px;
+    height: 4px;
+    background: $black;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__top {
+    transform: rotate(45deg) translate(0px, 11px);
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__middle {
+    opacity: 0;
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__bottom {
+    transform: rotate(-45deg) translate(0px, -11px);
+}
+
+.menu{
+    padding: $space;
+    margin: 0;
+    text-align: left;
+    z-index: 3;
+    width: auto;
+    background-color: $orange;
+    position: absolute;
+    right: 0px;
+    &__ul{
+        padding-left: 0%;
+    }
+    &__li{
+        margin-bottom: $space;
+    }
+    &__link{
+        color: $black;
+        text-decoration: none;
+        margin-bottom: 20px;
+        &:hover{
+            text-decoration: underline $black;
+        }
+    }
+}
+.off{
+    display: none;
+}
+
+@media all and (max-width: 700px) {
+    header {
+        justify-content: space-between;
+    }
+    .topbar-off {
+        display: none;
+    }
+    .topbar {
+        justify-content: flex-start;
+        width: auto;
+    }
+    .topbar-on {
+        display: block;
+    }
+}
