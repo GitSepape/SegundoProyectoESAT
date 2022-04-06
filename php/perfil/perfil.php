@@ -22,8 +22,8 @@
                 </div>
             </div>
             <div class="perfil__segundo--botones">
-                <input class=" grid_cell--30 perfil__boton perfil__boton--cerrar" type="button" value="CERRAR SESIÓN" onclick="window.location.href='./inicio-sesion.php';">
-                <input class=" grid_cell--30 perfil__boton perfil__boton--guardar" type="button" value="GUARDAR CAMBIOS">
+                <input class="efecto-click grid_cell--30 perfil__boton perfil__boton--cerrar" type="button" value="CERRAR SESIÓN" onclick="window.location.href='./inicio-sesion.php';">
+                <input class="efecto-click grid_cell--30 perfil__boton perfil__boton--guardar" type="button" value="GUARDAR CAMBIOS">
             </div>
         </article>
     </section>

@@ -6,19 +6,21 @@
                 <img src="../../images/fresa-platano.jpg" alt="" class="imagen__fruta">
             </div>
             <div class="grid_cell--55 producto__comprar--texto">
-                <p class="producto__texto color-orange producto__texto--nombre">FRESA PLATANO</p>
+                <p class="producto__texto color-orange producto__texto--nombre">Fresa y plátano</p>
                 <p class="producto__texto color-orange producto__texto--precio">9.99€ <span class="color-light-green">/ UNIDAD</span></p>
                 <p class="producto__texto producto__texto--descripcion">
-                    Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Consectetur eveniet molestiae magni repudiandae 
-                    quo perferendis. 
+                    Este producto contiene 250 gramos de fresa y 250 gramos de plátano dando como resultado 2 smoothies medianos o 1 completo. 
                 </p>
                 <p class="producto__texto producto__texto--descripcion">
-                    Minus soluta consectetur placeat. 
-                    Voluptate qui deleniti architecto? Assumenda rem 
-                    suscipit ducimus eligendi molestias possimus.
+                    1. Mezcla los ingredientes en la licuadora. 
                 </p>
-                <input class="boton__compra" type="button" value="AÑADIR AL CARRITO">
+                <p class="producto__texto producto__texto--descripcion">
+                    2. Añadir leche al gusto.
+                </p>
+                <p class="producto__texto producto__texto--descripcion">
+                    3. Servir de inmediato.
+                </p>
+                <input class="boton__compra efecto-click" type="button" value="AÑADIR AL CARRITO">
             </div>
         </article>
     </section>

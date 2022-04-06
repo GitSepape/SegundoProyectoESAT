@@ -413,6 +413,11 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
 }
 
+.efecto-click:active {
+  -webkit-box-shadow: 0 0 3px 1px black;
+          box-shadow: 0 0 3px 1px black;
+}
+
 .linea-separadora {
   height: 0.3vw;
   width: 100vw;
@@ -448,21 +453,24 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 24px 18px 24px;
+  padding: 0px 24px 0px 24px;
 }
 .footer__derechos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__lista {
   font-size: 1.8vw;
@@ -470,7 +478,6 @@ footer {
 
 .svg__bebida {
   width: 102px;
-  height: 156px;
 }
 
 @media all and (max-width: 700px) {
@@ -480,7 +487,6 @@ footer {
 
   .svg__bebida {
     width: 62px;
-    height: 112px;
   }
 }
 header {
@@ -714,6 +720,7 @@ header {
 }
 .quienes-somos__descripcion {
   font-size: 1.8vw;
+  margin-bottom: 12px;
 }
 
 @media all and (max-width: 500px) {
@@ -1195,6 +1202,7 @@ header {
 .boton__borrar {
   position: absolute;
   background-color: transparent;
+  border: transparent;
   z-index: 2;
 }
 

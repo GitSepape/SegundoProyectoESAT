@@ -21,8 +21,8 @@
                 <table> 
                     <input name="usuario" type="text" class="Input sesion__datos" value="" placeholder="Usuario" size="20"> 
                     <input name="password" type="password" class="Input sesion__datos" value="" placeholder="Password" size="20">
-                    <input value="INICIAR SESIÓN" target="_parent" id="iniciar-sesion" onclick="Login()" type="button" class="boton sesion__boton sesion__login"> 
-                    <input value="CREAR CUENTA" type="button" name="crear-cuenta" id="crear-cuenta" class="boton sesion__boton sesion__crear" href="">
+                    <input value="INICIAR SESIÓN" target="_parent" id="iniciar-sesion" onclick="Login()" type="button" class="efecto-click boton sesion__boton sesion__login"> 
+                    <input value="CREAR CUENTA" type="button" name="crear-cuenta" id="crear-cuenta" class="desactivado efecto-click boton sesion__boton sesion__crear" href="">
                 </table> 
             </form>
         </article>
